@@ -12,6 +12,8 @@ the native benchmark.
 *   DBTune takes the machine specifications without allowing the users to
     override it. This means that on containers, the specifications won't match
     the container limits.
+*   DBTune cannot determine if the disk is an `ssd` or `hhd` due to the volume.
+    One needs to patch the DBTune source code to return the right value.
 
 The source codes under `db/synthetic_workload` were taken from the 
 [Synthetic Workload Repo]. This repo does not claim ownership or copyright for
